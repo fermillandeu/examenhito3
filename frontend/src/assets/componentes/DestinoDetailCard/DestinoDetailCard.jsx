@@ -9,7 +9,7 @@ import "./destinodetailcard.css";
 export const DestinoDetailCard = () => {
   const { viajes } = useContext(MyContext);
   const { id } = useParams();
-  const { addFavoritos, user } = useContext(UserContext);
+  const { addFavoritos, user, token } = useContext(UserContext);
   const [viaje, setViaje] = useState(null);
   const [mensajeFavorito, setMensajeFavorito] = useState("");
 
